@@ -3,7 +3,7 @@ import Navbar from "../components/Navbar";
 import About from "../components/About";
 import RegistrationForm from "../components/RegistrationForm";
 
-const LandingPage = () => {
+const RegisterPage = () => {
     return (
         <div className="register-page">
             <header className="header">
@@ -33,4 +33,4 @@ const LandingPage = () => {
     );
 }
 
-export default LandingPage;
+export default RegisterPage;
