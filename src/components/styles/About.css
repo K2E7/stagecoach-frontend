@@ -1,0 +1,16 @@
+h1 {
+    padding: 2rem;
+    text-align: left;
+    color: #323232;
+}
+
+.about {
+    flex-grow: 1;
+    box-shadow:
+        0.125rem 0.125rem 0.25rem #C4BCB3,
+        -0.125rem -0.125rem 0.25rem #FFFEF2;
+}
+
+.left-content-item {
+    border-radius: 1rem;
+}

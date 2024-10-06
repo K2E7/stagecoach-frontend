@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab:ital,wght@0,600;1,300&display=swap');
+
+.navbar {
+    display: flex;
+    align-items: center;
+    font-family: Lexend;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 0.5% 2%;
+    border-radius: 16px;
+    color: #FFBE98;
+    background-color: #CB3441;
+    box-shadow:
+        0.125rem 0.125rem 0.25rem #C4BCB3,
+        -0.125rem -0.125rem 0.25rem #FFFEF2;
+}
+
+.logo {
+    font-family: "Zilla Slab";
+    font-size: 1.5rem;
+}
+
+.menu {
+    display: flex;
+    gap: 5%;
+    flex-grow: 1;
+    justify-content: flex-end;
+    
+}
+
+.navItem {
+    list-style: none;
+    color: #FFBE98;
+    cursor: pointer;
+}

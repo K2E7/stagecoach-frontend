@@ -1,0 +1,58 @@
+.div-form {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    align-items: space-between;
+    height: 80%;
+    width: 80%;
+}
+
+.inputWrapper {
+    height: 70%;
+}
+
+.form-elem {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2rem;
+    font-weight: 500;
+
+    height: 35%;
+    padding: 0.4rem;
+    border-radius: 5%;
+}
+
+.formLabel {
+    margin-bottom: 1%;
+}
+
+.textfield {
+    background: #E6DDD2;
+    font-size: 1rem;
+    border: none;
+    box-shadow:
+        inset 0.15rem 0.15rem 0.5rem #C4BCB3,
+        inset -0.15rem -0.15rem 0.5rem #FFFEF2;
+    border-radius: 0.5rem;
+    height: 35%;
+    padding-left: 0.5rem;
+    color: #323232;
+}
+
+.textfield:hover {
+    box-shadow:
+        0 0 0 0.15rem #CB344195,
+        inset 0.15rem 0.15rem 0.5rem #C4BCB3,
+        inset -0.15rem -0.15rem 0.5rem #FFFEF2;
+}
+
+.textfield:focus {
+    outline: none;
+    .textfield:hover {
+        box-shadow:
+            0 0 0 0.15rem #CB3441,
+            inset 0.15rem 0.15rem 0.5rem #C4BCB3,
+            inset -0.15rem -0.15rem 0.5rem #FFFEF2;
+    }
+}
+

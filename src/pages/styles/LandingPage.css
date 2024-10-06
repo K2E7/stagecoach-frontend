@@ -1,0 +1,75 @@
+.landing-page {
+    height: 86vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1.2rem;
+    background-color: #E6DDD2;
+    border-radius: 1rem;
+    box-shadow:
+        0.125rem 0.125rem 0.25rem #C4BCB3,
+        -0.125rem -0.125rem 0.25rem #FFFEF2;
+}
+
+.header {
+    width: 100%;
+    margin-bottom: 0.04vh;
+}
+
+.landing-content {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+
+    gap: 2rem;
+
+}
+
+.landing-content-item {
+    border-radius: 1rem;
+
+}
+
+.left {
+    padding: 0;
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.right {
+    display: flex;
+    height: auto;
+    flex-direction: column;
+    width: 35%;
+    gap: 0.5rem;
+}
+
+.selector-wrapper {
+    width: 80%;
+    border-radius: 1.75rem;
+    box-shadow:
+        0.125rem 0.125rem 0.25rem #C4BCB3,
+        -0.125rem -0.125rem 0.25rem #FFFEF2;
+}
+
+.form-wrapper {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1rem;
+    padding: 1.2rem;
+    box-shadow:
+        0.125rem 0.125rem 0.25rem #C4BCB3,
+        -0.125rem -0.125rem 0.25rem #FFFEF2;
+}
+
+.landing-footer {
+    font-size: 0.9rem;
+    color: #777;
+    text-align: center;
+}
