@@ -1,9 +1,6 @@
 import "./styles/RegisterPage.css";
 import Navbar from "../components/Navbar";
 import About from "../components/About";
-import NeoButton from "../components/NeoButton";
-import Selector from '../components/Selector';
-import { SelectorProvider } from '../components/contexts/SelectorContext';
 import RegistrationForm from "../components/RegistrationForm";
 
 const LandingPage = () => {
@@ -30,7 +27,7 @@ const LandingPage = () => {
                 </div>
             </div>
             <footer className="register-footer">
-                <p>2024 Stagecoach - All Rights Reserved</p>
+                2024 Stagecoach - All Rights Reserved
             </footer>
         </div>
     );

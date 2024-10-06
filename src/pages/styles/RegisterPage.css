@@ -71,11 +71,11 @@
     font-family: 'Space Grotesk';
     font-size: 1.5rem;
     text-align: center;
-    padding: 0.5rem;
+    padding: 0.5rem 1rem;
     z-index: 0;
     color: #E4E0D8;
     background-color: #323232;
-    border-radius: 1rem;
+    border-radius: 1.2rem;
 }
 
 .reg-form-wrapper {
