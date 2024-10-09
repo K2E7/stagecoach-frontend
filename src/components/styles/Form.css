@@ -3,8 +3,8 @@
     flex-direction: column;
     text-align: left;
     align-items: space-between;
-    height: 80%;
-    width: 80%;
+    height: 90%;
+    width: 100%;
 }
 
 .inputWrapper {
@@ -28,14 +28,14 @@
 
 .textfield {
     background: #E6DDD2;
-    font-size: 1rem;
+    font-size: 0.9rem;
     border: none;
     box-shadow:
         inset 0.15rem 0.15rem 0.5rem #C4BCB3,
         inset -0.15rem -0.15rem 0.5rem #FFFEF2;
     border-radius: 0.5rem;
     height: 35%;
-    padding-left: 1rem;
+    padding-left: 0.8rem;
     color: #323232;
 }
 

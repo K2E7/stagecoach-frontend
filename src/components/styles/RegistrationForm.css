@@ -1,4 +1,4 @@
-.div-form {
+.r-div-form {
     display: flex;
     flex-direction: column;
     text-align: left;
@@ -7,11 +7,11 @@
     width: 80%;
 }
 
-.inputWrapper {
+.r-inputWrapper {
     height: 70%;
 }
 
-.form-elem {
+.r-form-elem {
     display: flex;
     flex-direction: column;
     font-size: 1.2rem;
@@ -22,11 +22,11 @@
     border-radius: 5%;
 }
 
-.formLabel {
+.r-formLabel {
     margin-bottom: 1%;
 }
 
-.textfield {
+.r-textfield {
     background: #E6DDD2;
     font-family: "Lexend";
     font-size: 1rem;
@@ -40,19 +40,19 @@
     color: #323232;
 }
 
-.textfield:hover {
+.r-textfield:hover {
     box-shadow:
         0 0 0 0.15rem #CB344195,
         inset 0.15rem 0.15rem 0.5rem #C4BCB3,
         inset -0.15rem -0.15rem 0.5rem #FFFEF2;
 }
 
-.textfield:focus {
+.r-textfield:focus {
     outline: none;
 
 }
 
-.textfield::selection {
+.r-textfield::selection {
     box-shadow:
         0 0 0 0.15rem #CB3441,
         inset 0.15rem 0.15rem 0.5rem #C4BCB3,

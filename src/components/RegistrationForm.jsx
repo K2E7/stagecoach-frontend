@@ -4,19 +4,19 @@ import "./styles/RegistrationForm.css"
 const RegistrationForm = () => {
 
     return (
-        <div className="div-form">
-            <div className="inputWrapper">
-                <div className="form-elem">
-                    <div className="formLabel">Username</div>
-                    <input className="textfield" type="email" id="email" />
+        <div className="r-div-form">
+            <div className="r-inputWrapper">
+                <div className="r-form-elem">
+                    <div className="r-formLabel">Username</div>
+                    <input className="r-textfield" type="email" id="email" />
                 </div>
-                <div className="form-elem">
-                    <div className="formLabel">Email</div>
-                    <input className="textfield" type="email" id="email" />
+                <div className="r-form-elem">
+                    <div className="r-formLabel">Email</div>
+                    <input className="r-textfield" type="email" id="email" />
                 </div>
-                <div className="form-elem">
-                    <div className="formLabel">Password</div>
-                    <input className="textfield" type="password" id="password" />
+                <div className="r-form-elem">
+                    <div className="r-formLabel">Password</div>
+                    <input className="r-textfield" type="password" id="password" />
                 </div>
             </div>
 

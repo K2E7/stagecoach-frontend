@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+.div-welcome {
+    display: flex;
+    padding: 1.5rem;
+    flex-direction: column;
+    text-align: left;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.TopText {
+    font-family: "Lexend";
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #323232;
+}
+
+.UserName {
+    font-family: "Space Grotesk";
+    font-size: 3.4rem;
+    font-weight: 700;
+    color: #323232;
+}
+
+.BottomText {
+    text-align: right;
+    font-family: "IBM Plex Mono";
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: #646464;
+}
