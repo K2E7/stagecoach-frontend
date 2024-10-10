@@ -1,16 +1,18 @@
 import { useState, useContext } from 'react';
-import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 import { SelectorContext } from './contexts/SelectorContext';
+import { AuthContext } from './contexts/AuthContext';
 import NeoButton from './NeoButton';
+import axios from 'axios'; // Import the custom Axios instance
 import './styles/Form.css';
 
 const Form = () => {
     const { selected } = useContext(SelectorContext);
+    const { login } = useContext(AuthContext);
     const navigate = useNavigate();
 
     const [credentials, setCredentials] = useState({
-        usernameOrEmail: '',
+        username: '',
         password: ''
     });
 
@@ -25,33 +27,30 @@ const Form = () => {
     };
 
     const handleLogin = async () => {
-        if (!credentials.usernameOrEmail || !credentials.password) {
+        if (!credentials.username || !credentials.password) {
             setErrorMessage('Please fill in all fields.');
             return;
         }
 
         try {
-            const loginData = {
-                username: credentials.usernameOrEmail,
-                password: credentials.password
-            };
-
-            const response = await axios.post('http://localhost:8080/api/auth/signin', loginData);
+            const response = await axios.post('http://localhost:8080/api/auth/signin', credentials);
 
             const { token, id, username, email, roles } = response.data;
 
-            localStorage.setItem('user', JSON.stringify({
+            // Use the login function from AuthContext
+            login({
                 token,
                 id,
                 username,
                 email,
                 roles
-            }));
+            });
 
             // Clear the error message
             setErrorMessage('');
-
-            // Redirect to dashboard or home page
+            localStorage.setItem("userId", response.data.userId);
+            localStorage.setItem("token",response.data.token);
+            // Redirect to the dashboard or home page
             navigate('/dashboard');
 
         } catch (error) {
@@ -75,8 +74,8 @@ const Form = () => {
                             className="textfield"
                             type="email"
                             id="email"
-                            name="usernameOrEmail"
-                            value={credentials.usernameOrEmail}
+                            name="username"
+                            value={credentials.username}
                             onChange={handleInputChange}
                         />
                     </div>
@@ -95,13 +94,13 @@ const Form = () => {
             ) : (
                 <div className="inputWrapper">
                     <div className="form-elem">
-                        <div className="formLabel">User Id</div>
+                        <div className="formLabel">User ID</div>
                         <input
                             className="textfield"
                             type="text"
                             id="userId"
-                            name="usernameOrEmail"
-                            value={credentials.usernameOrEmail}
+                            name="username"
+                            value={credentials.username}
                             onChange={handleInputChange}
                         />
                     </div>

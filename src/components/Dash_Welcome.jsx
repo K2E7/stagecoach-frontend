@@ -1,7 +1,9 @@
 import './styles/Dash_Welcome.css';
 import PropTypes from 'prop-types';
 
+
 const Welcome = ({ username, accountNumber }) => {
+
     return (
         <div className="div-welcome">
             <div className="TopText">Welcome</div>

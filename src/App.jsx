@@ -1,19 +1,26 @@
-import './App.css'
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
-import LandingPage from './pages/LandingPage.jsx'
-import RegisterPage from './pages/RegisterPage.jsx'
-import Dashboard from './pages/DashPage.jsx'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import PrivateRoute from './components/PrivateRoute';
+import Dashboard from './pages/DashPage';
+import LandingPage from './pages/LandingPage';
+import RegisterPage from './pages/RegisterPage';
 
 function App() {
-  return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<LandingPage />}></Route>
-        <Route path="/register" element={<RegisterPage />}></Route>
-        <Route path="/dash" element={<Dashboard />}></Route>
-      </Routes>
-    </Router >
-  )
+    return (
+        <Router>
+            <Routes>
+                <Route path="/" element={<LandingPage />} />
+                <Route
+                    path="/dashboard"
+                    element={
+                        <PrivateRoute>
+                            <Dashboard />
+                        </PrivateRoute>
+                    }
+                />
+                <Route path="/register" element={<RegisterPage />} />
+            </Routes>
+        </Router>
+    );
 }
 
-export default App
+export default App;
