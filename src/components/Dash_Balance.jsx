@@ -16,7 +16,7 @@ const Balance = ({ balance }) => {
     return (
         <div className="div-balance">
             <div className="balance-hider neumorph-ui-left">
-                {isBalanceVisible && balance !== null ? <p>Balance: ${balance}</p> : <p>Balance: ******</p>}
+                {isBalanceVisible && balance !== null ? <p>${balance}</p> : <p></p>}
             </div>
             <div className="balance-button-wrapper">
                 <button

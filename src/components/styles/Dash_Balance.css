@@ -10,6 +10,8 @@
     border-radius: 3.4rem;
     height: 50%;
     background: #323232E5;
+    color: #E4E0D8;
+    text-align: center;
 }
 
 .balance-button-wrapper {
@@ -39,7 +41,7 @@
     border-radius: 3rem;
     background-color: #FFBE98;
     color: #323232E5;
-    font-size: 1.7rem;
+    font-size: 1.2rem;
     font-weight: 700;
     padding: 0.5rem 1rem;
     border: none;

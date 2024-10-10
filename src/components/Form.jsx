@@ -45,11 +45,13 @@ const Form = () => {
                 email,
                 roles
             });
+            
 
             // Clear the error message
             setErrorMessage('');
-            localStorage.setItem("userId", response.data.userId);
-            localStorage.setItem("token",response.data.token);
+            localStorage.setItem("token", token);
+            localStorage.setItem("userId",id);
+            localStorage.setItem("username",username);
             // Redirect to the dashboard or home page
             navigate('/dashboard');
 
